@@ -7,11 +7,13 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"time"
 )
 
 var version string
 
 func main() {
+	time.Sleep(5 * time.Second)
 	ctx := linker.NewContext()
 	remaining := parseArgs(ctx)
 
